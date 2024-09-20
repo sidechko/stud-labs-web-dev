@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Roboto Black";
+    src: url("fonts/Roboto/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url("fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("fonts/Roboto/Roboto-Thin.ttf");
+}
+
+body{
+    min-height: 95vh;
+    background: #1c1c1c;
+    margin: auto;
+    font-family: "Roboto Regular", serif;
+}
+
+/*header & animation*/
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 3vh;
+    min-width: 5vw;
+    background: #fdfdfd;
+    color:#4f4f4f;
+    transition: min-height .45s, background .45s, min-width .7s, min-height .3s;
+    display: flex;
+    justify-content: space-around;
+}
+header:hover{
+    min-height: 3vh;
+    min-width: 100%;
+    border-radius: 0;
+    background: #4f4f4f80;
+    color:#fcfcfc;
+}
+.header-button{
+    color: #fcfcfc;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .15s, width .5s, padding-left .5s, padding-right .5s;
+}
+header:hover>.header-button{
+    visibility: visible;
+    opacity: 100%;
+    width: auto;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    transition: opacity .4s .5s, width .5s, padding-left .5s, padding-right .5s;
+}
+.header-button:hover{
+    background: #3a3a3a;
+}
+.header-button-text{
+
+}
+
+/*navi logo*/
+#navi-logo{
+    display: flex;
+    flex-direction: column;
+    font-size: .75em;
+    text-align: center;
+    margin:0 2vw 0 2vw;
+}
+#croc-svg-img-1{
+    width: 4vw;
+    margin: auto;
+}
+/*main content*/
+main{
+    min-height: 91.2vh;
+}
+/*footer*/
+footer{
+    display: flex;
+    margin-top: auto;
+    background: #2a2a2a;
+    justify-content: space-around;
+    color: #fcfcfc;
+    width: 100%;
+}
