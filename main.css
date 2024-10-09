@@ -84,6 +84,7 @@ header:hover>.header-button{
     font-size: .75em;
     text-align: center;
     margin:0 2vw 0 2vw;
+    font-family: "Roboto Bold";
 }
 #croc-svg-img-1{
     width: 4vw;
@@ -91,12 +92,22 @@ header:hover>.header-button{
 }
 /*main content*/
 main{
+    margin-top: 14vh;
     min-height: 91.2vh;
 }
+.main-content{
+    margin: 6vh 8vw;
+    padding: 1vh 2vw;
+    min-height: 20vh;
+    background: #2a2a2a;
+    color: #dcdcdc;
+}
+
 /*footer*/
 footer{
     display: flex;
     margin-top: auto;
+    flex-shrink: 0;
     background: #2a2a2a;
     justify-content: space-around;
     color: #fcfcfc;
